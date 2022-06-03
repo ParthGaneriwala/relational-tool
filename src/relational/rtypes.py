@@ -1,31 +1,8 @@
-# Relational
-# Copyright (C) 2008-2020  Salvo "LtWorf" Tomaselli
-#
-# Relation is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-# author Salvo "LtWorf" Tomaselli <tiposchi@tiscali.it>
-#
-# Custom types for relational algebra.
-# Purpose of this module is having the isFloat function and
-# implementing dates to use in selection.
-
 import datetime
 import keyword
 import re
 from typing import Union, Set, Any, Callable, Type, Optional
 from dataclasses import dataclass
-
 
 RELATION_NAME_REGEXP = re.compile(r'^[_a-z][_a-z0-9]*$', re.IGNORECASE)
 _date_regexp = re.compile(
