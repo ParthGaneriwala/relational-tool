@@ -11,9 +11,9 @@ setuptools.setup(
     description="Relational Algebra Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/ParthGaneriwala/relational-tool",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/ParthGaneriwala/relational-tool/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
